@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  
+ <parameters name="username" value="shilpa_viacomuser"/>
+  
+    <classes>
+      <class name="viacom18digital.VerifyLoginPage"/>
+      <class name="MavenDemoProject.MavenDemoProject.AppTest"/>
+      <class name="com.pft.qa.LaunchBrowser"/>
+      <class name="com.pft.qa.MavenTestclass"/>
+      <class name="com.pft.qa.GenericClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
