@@ -10,7 +10,7 @@ public class Check
 
 	public static void main(String[] args) 
 	{
-		System.setProperty("webdriver.chrome.driver","C:/Users/shilpashree.k/Downloads/chromedriver_win32 (2)/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:/Users/shilpashree.k/Downloads/drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("192.168.150.205:1000/BC/product/modules/signin.aspx?viacom18digital");

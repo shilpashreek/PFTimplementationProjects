@@ -1,7 +1,5 @@
 package viacom18digital;
 
-import static org.testng.Assert.assertEquals;
-
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
@@ -11,18 +9,14 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Listeners;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -245,7 +239,6 @@ public void LoginBCportal() throws AWTException, InterruptedException
   driver.findElement(By.id("SearchV2Button")).click();
   driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
   driver.findElement(By.id("SimpleSearchTextBox")).sendKeys("Che");
-  
   //visibility of elements
   WebDriverWait wait = new WebDriverWait(driver,30);
   wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//div[@id='suggestionListDiv']/descendant::div")));

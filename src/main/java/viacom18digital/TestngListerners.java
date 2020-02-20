@@ -1,6 +1,5 @@
 package viacom18digital;
 
-import org.apache.commons.mail.EmailException;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
