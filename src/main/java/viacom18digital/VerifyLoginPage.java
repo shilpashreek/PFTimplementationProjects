@@ -107,7 +107,7 @@ public void UploadFile() throws AWTException, InterruptedException
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	//Browse file 
 	Robot r = new Robot();
-	
+			
 	driver.findElement(By.xpath("//div[@class='browseButton']")).click();
 	//Thread.sleep(3000);
 	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("waiting")));
