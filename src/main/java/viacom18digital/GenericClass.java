@@ -230,8 +230,8 @@ public static void mail() throws EmailException
 	email.setFrom("shilpashree.k@primefocus.com");
 	email.setSubject("TestCaseExecutionMail");
 	email.setMsg("All the testcases are executed successfully");
-	email.addTo("nayana.dj@primefocus.com"); //nayana.dj@primefocus.com
-	email.addCc("shilpashree.k@primefocus.com");
+	email.addTo("sivakumar.vasagar@primefocus.com"); //nayana.dj@primefocus.com
+	email.addCc("sreenivasrao.vampu@primefocus.com");
 	email.send();
 	//System.out.println("testcase of test" +testMethodName +"is pass");
 	

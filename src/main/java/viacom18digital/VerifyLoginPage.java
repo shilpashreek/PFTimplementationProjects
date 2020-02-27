@@ -91,7 +91,7 @@ public void UploadFile() throws AWTException, InterruptedException
 	
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	WebElement element1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='vcTitle']")));
-	element1.sendKeys("pfttest-22janEvening");
+	element1.sendKeys("PFTtest-ingest");
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	driver.findElement(By.id("vcAssetMasterID")).sendKeys("123");
 	driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
