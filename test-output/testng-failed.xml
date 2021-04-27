@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite parallel="none" name="Failed suite [Default suite]">
+  <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="viacom18digital.VerifyLoginPage">
+      <class name="com.pft.qa.LaunchBrowser">
         <methods>
-          <include name="QcLogin"/>
-          <include name="VerifyqcPopup"/>
-          <include name="ChromeSettings"/>
+          <include name="Url"/>
+          <include name="Openapplication"/>
         </methods>
-      </class> <!-- viacom18digital.VerifyLoginPage -->
+      </class> <!-- com.pft.qa.LaunchBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

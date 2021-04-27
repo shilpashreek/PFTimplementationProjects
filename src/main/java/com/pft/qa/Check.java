@@ -16,6 +16,9 @@ public class Check
 		driver.get("192.168.150.205:1000/BC/product/modules/signin.aspx?viacom18digital");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.getTitle();
+		
+	System.out.println("***********");
+		System.out.println(driver.getPageSource());
 
 	}
 

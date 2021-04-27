@@ -116,10 +116,10 @@ public void UploadFile() throws AWTException, InterruptedException
 	
   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
   
-  //Thread.sleep(1500);
+  Thread.sleep(5000);
 	
 	//Uploading file using Robot class
-   StringSelection stringselection=new StringSelection("C:\\Viacom18\\Ingest\\TEST.mp4");
+   StringSelection stringselection=new StringSelection("C:\\Viacom18\\Ingest\\ShilpaTest.mp4");
    Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringselection,null);
    
    r.setAutoDelay(3000);
